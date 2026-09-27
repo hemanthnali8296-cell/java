@@ -1,0 +1,34 @@
+class Solution {
+
+    public static void add_to_ArrayList(ArrayList<Integer> A, int x) {
+        // Adds an element x to the ArrayList A at the end
+        A.add(x);
+    }
+
+    public static void sort_ArrayList_Asc(ArrayList<Integer> A) {
+        // Sorts the ArrayList A in ascending order
+        Collections.sort(A);
+    }
+
+    public static void reverse_ArrayList(ArrayList<Integer> A) {
+        // Reverses the ArrayList A
+        Collections.reverse(A);
+    }
+
+    public static int size_Of_ArrayList(ArrayList<Integer> A) {
+        // Returns the size of the ArrayList
+        return A.size();
+    }
+    
+    public static void sort_ArrayList_Desc(ArrayList<Integer> A) {
+        // Sorts the ArrayList A in descending order
+        Collections.sort(A, Collections.reverseOrder());
+    }
+
+    public static void print_ArrayList(ArrayList<Integer> A) {
+        // Prints space-separated values of the ArrayList
+        for (int i = 0; i < A.size(); i++) {
+            System.out.print(A.get(i) + " ");
+        }
+    }
+}
